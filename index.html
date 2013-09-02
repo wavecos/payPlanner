@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="PayPlannerApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+    <title>Pay Planner</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="navbar">
+                    <h1>Pay Planner</h1>
+                    {{fixedFee.name}}
+                </div>
+            </div>
+        </div>
+        <div ng-view></div>
+    </div>
+
+    <!-- JavaScrip`t Dependencies -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+    <script type="text/javascript" src="/js/PayPlanner.js"></script>
+</body>
+</html>
