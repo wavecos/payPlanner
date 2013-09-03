@@ -27,7 +27,7 @@ var paymentData = {
 /* Controllers */
 payPlannerAppModule.controller('PaymentsController', function($scope) {
 
-    $scope.payData = paymentData;
+    $scope.pay = paymentData;
 
     $scope.calculatePayments = function() {
         console.log('calculamos los pagos');

@@ -3,11 +3,11 @@
 
     <div class="form-group">
         <label for="txtCreditAmount">Monto del Crédito</label>
-        <input type="text" class="form-control" id="txtCreditAmount" placeholder="Crédito">
+        <input type="text" class="form-control" id="txtCreditAmount" placeholder="Crédito" ng-model="pay.creditAmount">
     </div>
     <div class="form-group">
-        <label for="txtTimeLimit">Plazo</label>
-        <input type="text" class="form-control" id="txtTimeLimit" placeholder="Plazo">
+        <label for="txtTimeLimit">Plazo (Años)</label>
+        <input type="text" class="form-control" id="txtTimeLimit" placeholder="Plazo" ng-model="pay.timeLimit">
     </div>
     <div class="form-group">
         <label for="txtFeesNumber">Número de Cuotas</label>
@@ -18,43 +18,40 @@
         <input type="text" class="form-control" id="txtDisbursementDate" placeholder="Fecha de Desembolso" disabled>
     </div>
     <div class="form-group">
-        <label for="txtFixedRatePeriod">Período Tasa Fija</label>
-        <input type="text" class="form-control" id="txtFixedRatePeriod" placeholder="Período Tasa Fija">
+        <label for="txtFixedRatePeriod">Período Tasa Fija (Meses)</label>
+        <input type="text" class="form-control" id="txtFixedRatePeriod" placeholder="Período Tasa Fija" ng-model="pay.fixedRatePeriod">
     </div>
     <div class="form-group">
-        <label for="txtFixedRate">Tasa Fija</label>
-        <input type="text" class="form-control" id="txtFixedRate" placeholder="Tasa Fija">
+        <label for="txtFixedRate">Tasa Fija (% Anual)</label>
+        <input type="text" class="form-control" id="txtFixedRate" placeholder="Tasa Fija" ng-model="pay.fixedRate">
     </div>
     <div class="form-group">
-        <label for="txtReferenceRate">Tasa de Referencia (TRe)</label>
-        <input type="text" class="form-control" id="txtReferenceRate" placeholder="Tasa de Referencia">
+        <label for="txtReferenceRate">Tasa de Referencia (TRe) (% Anual)</label>
+        <input type="text" class="form-control" id="txtReferenceRate" placeholder="Tasa de Referencia" ng-model="pay.referenceRate">
     </div>
     <div class="form-group">
-        <label for="txtSpread">Spread</label>
-        <input type="text" class="form-control" id="txtSpread" placeholder="Spread">
+        <label for="txtSpread">Spread (% Anual)</label>
+        <input type="text" class="form-control" id="txtSpread" placeholder="Spread" ng-model="pay.spread">
     </div>
     <div class="form-group">
         <label for="txtPeriodVariableRate">Tasa Período Variable</label>
         <input type="text" class="form-control" id="txtPeriodVariableRate" placeholder="Tasa Período Variable" disabled>
     </div>
     <div class="form-group">
-        <label for="txtLapseBetweenFees">Lapso entre Cuotas</label>
-        <input type="text" class="form-control" id="txtLapseBetweenFees" placeholder="Lapso entre Cuotas">
+        <label for="txtLapseBetweenFees">Lapso entre Cuotas (Días)</label>
+        <input type="text" class="form-control" id="txtLapseBetweenFees" placeholder="Lapso entre Cuotas" ng-model="pay.lapseBetweenFees">
     </div>
     <div class="form-group">
-        <label for="txtGracePeriod">Período de Gracia</label>
-        <input type="text" class="form-control" id="txtGracePeriod" placeholder="Período de Gracia">
+        <label for="txtGracePeriod">Período de Gracia (Días)</label>
+        <input type="text" class="form-control" id="txtGracePeriod" placeholder="Período de Gracia" ng-model="pay.gracePeriod">
     </div>
     <div class="form-group">
         <label for="txtFormCost">Costo del Formulario</label>
-        <input type="text" class="form-control" id="txtFormCost" placeholder="Costo del Formulario">
+        <input type="text" class="form-control" id="txtFormCost" placeholder="Costo del Formulario" ng-model="pay.formCost">
     </div>
     <div class="form-group">
-        <label for="txtDesgravamenInsurance">Seguro de Desgravamen</label>
-        <input type="text" class="form-control" id="txtDesgravamenInsurance" placeholder="Seguro de Desgravamen">
+        <label for="txtDesgravamenInsurance">Seguro de Desgravamen (Personas)</label>
+        <input type="text" class="form-control" id="txtDesgravamenInsurance" placeholder="Seguro de Desgravamen" ng-model="pay.desgravamenInsurance">
     </div>
-    <input type="submit" value="Calcular">
-
+    <button type="submit" class="btn btn-primary">Calcular</button>
 </form>
-
-
