@@ -10,7 +10,7 @@ var paymentData = {
     disbursementDate: new Date(), // Fecha de Desembolso
     fixedRatePeriod: 0, // Periodo Tasa Fija
     fixedRate: 0, // Tasa Fija
-    referenceDate: 0, // Tasa de Referencia (TRe)
+    referenceRate: 0, // Tasa de Referencia (TRe)
     spread: 0, // Spread - Propagar ?
     periodVariableRate: 0, // Tasa Periodo Variable 
     lapseBetweenFees: 0, // Lapso Entre Cuotas

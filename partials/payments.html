@@ -1,6 +1,58 @@
 
-<form ng-submit="calculatePayments()">
+<form ng-submit="calculatePayments()" role="form">
 
+    <div class="form-group">
+        <label for="txtCreditAmount">Monto del Crédito</label>
+        <input type="text" class="form-control" id="txtCreditAmount" placeholder="Crédito">
+    </div>
+    <div class="form-group">
+        <label for="txtTimeLimit">Plazo</label>
+        <input type="text" class="form-control" id="txtTimeLimit" placeholder="Plazo">
+    </div>
+    <div class="form-group">
+        <label for="txtFeesNumber">Número de Cuotas</label>
+        <input type="text" class="form-control" id="txtFeesNumber" placeholder="Cuotas" disabled>
+    </div>
+    <div class="form-group">
+        <label for="txtDisbursementDate">Fecha de Desembolso</label>
+        <input type="text" class="form-control" id="txtDisbursementDate" placeholder="Fecha de Desembolso" disabled>
+    </div>
+    <div class="form-group">
+        <label for="txtFixedRatePeriod">Período Tasa Fija</label>
+        <input type="text" class="form-control" id="txtFixedRatePeriod" placeholder="Período Tasa Fija">
+    </div>
+    <div class="form-group">
+        <label for="txtFixedRate">Tasa Fija</label>
+        <input type="text" class="form-control" id="txtFixedRate" placeholder="Tasa Fija">
+    </div>
+    <div class="form-group">
+        <label for="txtReferenceRate">Tasa de Referencia (TRe)</label>
+        <input type="text" class="form-control" id="txtReferenceRate" placeholder="Tasa de Referencia">
+    </div>
+    <div class="form-group">
+        <label for="txtSpread">Spread</label>
+        <input type="text" class="form-control" id="txtSpread" placeholder="Spread">
+    </div>
+    <div class="form-group">
+        <label for="txtPeriodVariableRate">Tasa Período Variable</label>
+        <input type="text" class="form-control" id="txtPeriodVariableRate" placeholder="Tasa Período Variable" disabled>
+    </div>
+    <div class="form-group">
+        <label for="txtLapseBetweenFees">Lapso entre Cuotas</label>
+        <input type="text" class="form-control" id="txtLapseBetweenFees" placeholder="Lapso entre Cuotas">
+    </div>
+    <div class="form-group">
+        <label for="txtGracePeriod">Período de Gracia</label>
+        <input type="text" class="form-control" id="txtGracePeriod" placeholder="Período de Gracia">
+    </div>
+    <div class="form-group">
+        <label for="txtFormCost">Costo del Formulario</label>
+        <input type="text" class="form-control" id="txtFormCost" placeholder="Costo del Formulario">
+    </div>
+    <div class="form-group">
+        <label for="txtDesgravamenInsurance">Seguro de Desgravamen</label>
+        <input type="text" class="form-control" id="txtDesgravamenInsurance" placeholder="Seguro de Desgravamen">
+    </div>
     <input type="submit" value="Calcular">
 
 </form>
