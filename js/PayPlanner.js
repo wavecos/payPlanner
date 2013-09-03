@@ -18,8 +18,10 @@ var paymentData = {
     formCost: 0, // Costo del Formulario
     desgravamenInsurance: 0, // Seguro de Desgravamen
 
-    prueba: function() {
-        console.log('esto es una salida de consola');
+    calculate: function() {
+        console.log('** Calculate Values **');
+        this.feesNumber = this.timeLimit * (360 / this.lapseBetweenFees);
+        this.periodVariableRate = this.spread + this.referenceRate  ;
     }
 };
 
@@ -31,6 +33,7 @@ payPlannerAppModule.controller('PaymentsController', function($scope) {
 
     $scope.calculatePayments = function() {
         console.log('calculamos los pagos');
+        paymentData.calculate();
     };
 
 
